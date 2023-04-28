@@ -1,0 +1,53 @@
+name: Bug Report
+description: The game crashed or something is not working as expected.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Filling out this information and providing logs will help get the issue resolved faster.
+  - type: dropdown
+    id: minecraftVersion
+    attributes:
+      label: Minecraft Version
+      description: What version of Minecraft were you running?
+      options:
+        - 1.20.x
+        - 1.19.x
+        - 1.18.x
+        - Other (specify below)
+    validations:
+      required: true
+  - type: input
+    id: modLoaderVersion
+    attributes:
+      label: Mod Loader Version
+      description: What version of Fabric were you using?
+    validations:
+      required: true
+  - type: input
+    id: modVersion
+    attributes:
+      label: Mod Version
+      description: What version of the mod were you using?
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Issue
+      description: Be as thorough as possible and provide a step-by-step guide to reproduce the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: latest.log
+      description: Please upload your latest.log file directly here or use https://gist.github.com/ and leave the link here.
+      placeholder: Drag and drop latest.log file here or link it with https://gist.github.com/!
+    validations:
+      required: true
+  - type: input
+    id: otherMods
+    attributes:
+      label: Do you use any other mods except the required ones?
+      description: Test whether the issue happens with all other mods disabled (except the required ones).
