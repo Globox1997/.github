@@ -7,7 +7,7 @@ body:
     attributes:
       label: Make sure you are not opening a duplicate.
       options:
-        - label: I have searched the issue tracker and did not find an issue describing my bug.
+        - label: I have searched the issue tracker and did not find an issue describing my bug/feature.
     validations:
       required: true
   - type: markdown
